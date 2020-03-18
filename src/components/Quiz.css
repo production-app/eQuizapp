@@ -1,0 +1,99 @@
+li {
+  list-style-type: none;
+  text-align: left;
+  background-color: transparent;
+  margin: 10px 5px;
+  padding: 5px 10px;
+  border: 1px solid lightgray;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+li:hover {
+  background: #eceef0;
+}
+
+ul {
+  margin: -1px -23px;
+  max-width: 500px;
+}
+.questspan {
+  margin: -56px;
+  background: #0299cc;
+  padding: 7px;
+  border-radius: 0px 15px 15px 0px;
+  color: whitesmoke;
+}
+
+.selected,
+.selected:hover {
+  background: #dd9d0a;
+  color: white;
+  border-radius: 23px 2px !important;
+  animation: progress-bar-stripes 2s linear infinite;
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
+}
+
+.wrong,
+.wrong:hover {
+  background: #ec3a04;
+  color: white;
+  border-radius: 23px 2px !important;
+  animation: progress-bar-stripes 2s linear infinite;
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
+}
+
+.correct,
+.correct:hover {
+  background: limegreen;
+  color: white;
+  border-radius: 23px 2px !important;
+  animation: progress-bar-stripes 2s linear infinite 3s;
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
+}
+
+.my-node-enter {
+  opacity: 0;
+}
+.my-node-enter-active {
+  opacity: 1;
+  transition: opacity 2000ms ease-in;
+}
+.my-node-exit {
+  opacity: 1;
+}
+.my-node-exit-active {
+  opacity: 0;
+  transition: opacity 2000ms ease-in;
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
